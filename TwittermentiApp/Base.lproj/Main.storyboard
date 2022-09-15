@@ -45,6 +45,9 @@
                                                 <state key="normal" title="Predict!">
                                                     <color key="titleColor" red="0.15686274510000001" green="0.66666666669999997" blue="0.75294117650000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="predictButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BVl-gA-GUu"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -71,6 +74,11 @@
                             <constraint firstItem="rhh-bP-yFT" firstAttribute="trailing" secondItem="7gV-9b-aUO" secondAttribute="trailing" id="slb-Zj-fqp"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="backgroundView" destination="3Xs-Ky-LMe" id="lNS-q7-6Dr"/>
+                        <outlet property="sentimentLabel" destination="B6T-0v-UOy" id="ocq-xj-sB1"/>
+                        <outlet property="textField" destination="3Xs-Ky-LMe" id="n6M-BW-kmZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
