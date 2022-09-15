@@ -23,18 +23,30 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let prediction = try! sentimentClassifier.prediction(text: "@Apple is not so bad")
-        print(prediction.label)
-        
         swifter.searchTweet(using: "@Apple", lang: "en", count: 100, tweetMode: .extended, success: { results, metadata in
-            var tweets = [String]()
+            var tweets = [TextClassifierInput]()
             
             for i in 0...99{
                 if let tweet = results[i]["full_text"].string{
-                    tweets.append(tweet)
+                    let tweetForClassification = TextClassifierInput(text: tweet)
+                    tweets.append(tweetForClassification)
                 }
             }
-            
+            do{
+            let predictions = try self.sentimentClassifier.predictions(inputs: tweets)
+                var sentimentScore = 0
+                for prediction in predictions {
+                    let sentiment = prediction.label
+                    if sentiment == "Pos"{
+                        sentimentScore += 1
+                    }else if sentiment == "Neg"{
+                        sentimentScore -= 1
+                    }
+                }
+                print(sentimentScore)
+            }catch{
+                print(error)
+            }
         }) { error in
             print(error)
         }
