@@ -13,7 +13,62 @@
 		B209414F28D25611003AEA25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B209414D28D25611003AEA25 /* Main.storyboard */; };
 		B209415128D25613003AEA25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B209415028D25613003AEA25 /* Assets.xcassets */; };
 		B209415428D25613003AEA25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B209415228D25613003AEA25 /* LaunchScreen.storyboard */; };
+		B209415C28D267D5003AEA25 /* TextClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = B209415B28D267D5003AEA25 /* TextClassifier.mlmodel */; };
+		B209417028D26A34003AEA25 /* SwifteriOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B209416628D269F6003AEA25 /* SwifteriOS.framework */; };
+		B209417128D26A35003AEA25 /* SwifteriOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B209416628D269F6003AEA25 /* SwifteriOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B209416528D269F6003AEA25 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B209415D28D269F5003AEA25 /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B9F50EE1944A5AB00894629;
+			remoteInfo = SwifteriOS;
+		};
+		B209416728D269F6003AEA25 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B209415D28D269F5003AEA25 /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B9F51131944A61D00894629;
+			remoteInfo = SwifterMac;
+		};
+		B209416928D269F6003AEA25 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B209415D28D269F5003AEA25 /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B300C1F1944AA1A00993175;
+			remoteInfo = SwifterDemoiOS;
+		};
+		B209416B28D269F6003AEA25 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B209415D28D269F5003AEA25 /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B300C471944AECB00993175;
+			remoteInfo = SwifterDemoMac;
+		};
+		B209416D28D269F6003AEA25 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B209415D28D269F5003AEA25 /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F6B4D5751C7BAC4500E06514;
+			remoteInfo = SwifterTests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B209417228D26A35003AEA25 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B209417128D26A35003AEA25 /* SwifteriOS.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		B209414428D25611003AEA25 /* TwittermentiApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwittermentiApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +79,8 @@
 		B209415028D25613003AEA25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B209415328D25613003AEA25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B209415528D25613003AEA25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B209415B28D267D5003AEA25 /* TextClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = TextClassifier.mlmodel; sourceTree = "<group>"; };
+		B209415D28D269F5003AEA25 /* Swifter.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Swifter.xcodeproj; path = ../Swifter/Swifter.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B209417028D26A34003AEA25 /* SwifteriOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,8 +98,10 @@
 		B209413B28D25611003AEA25 = {
 			isa = PBXGroup;
 			children = (
+				B209415D28D269F5003AEA25 /* Swifter.xcodeproj */,
 				B209414628D25611003AEA25 /* TwittermentiApp */,
 				B209414528D25611003AEA25 /* Products */,
+				B209416F28D26A34003AEA25 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +123,28 @@
 				B209415028D25613003AEA25 /* Assets.xcassets */,
 				B209415228D25613003AEA25 /* LaunchScreen.storyboard */,
 				B209415528D25613003AEA25 /* Info.plist */,
+				B209415B28D267D5003AEA25 /* TextClassifier.mlmodel */,
 			);
 			path = TwittermentiApp;
+			sourceTree = "<group>";
+		};
+		B209415E28D269F5003AEA25 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B209416628D269F6003AEA25 /* SwifteriOS.framework */,
+				B209416828D269F6003AEA25 /* SwifterMac.framework */,
+				B209416A28D269F6003AEA25 /* SwifterDemoiOS.app */,
+				B209416C28D269F6003AEA25 /* SwifterDemoMac.app */,
+				B209416E28D269F6003AEA25 /* SwifterTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B209416F28D26A34003AEA25 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,6 +157,7 @@
 				B209414028D25611003AEA25 /* Sources */,
 				B209414128D25611003AEA25 /* Frameworks */,
 				B209414228D25611003AEA25 /* Resources */,
+				B209417228D26A35003AEA25 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -113,12 +194,56 @@
 			mainGroup = B209413B28D25611003AEA25;
 			productRefGroup = B209414528D25611003AEA25 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = B209415E28D269F5003AEA25 /* Products */;
+					ProjectRef = B209415D28D269F5003AEA25 /* Swifter.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				B209414328D25611003AEA25 /* TwittermentiApp */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		B209416628D269F6003AEA25 /* SwifteriOS.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwifteriOS.framework;
+			remoteRef = B209416528D269F6003AEA25 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B209416828D269F6003AEA25 /* SwifterMac.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwifterMac.framework;
+			remoteRef = B209416728D269F6003AEA25 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B209416A28D269F6003AEA25 /* SwifterDemoiOS.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = SwifterDemoiOS.app;
+			remoteRef = B209416928D269F6003AEA25 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B209416C28D269F6003AEA25 /* SwifterDemoMac.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = SwifterDemoMac.app;
+			remoteRef = B209416B28D269F6003AEA25 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B209416E28D269F6003AEA25 /* SwifterTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SwifterTests.xctest;
+			remoteRef = B209416D28D269F6003AEA25 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		B209414228D25611003AEA25 /* Resources */ = {
@@ -138,6 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B209415C28D267D5003AEA25 /* TextClassifier.mlmodel in Sources */,
 				B209414C28D25611003AEA25 /* ViewController.swift in Sources */,
 				B209414828D25611003AEA25 /* AppDelegate.swift in Sources */,
 				B209414A28D25611003AEA25 /* SceneDelegate.swift in Sources */,
