@@ -75,9 +75,9 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="backgroundView" destination="3Xs-Ky-LMe" id="lNS-q7-6Dr"/>
+                        <outlet property="backgroundView" destination="3BV-Qj-Ds2" id="N8W-YF-5aN"/>
+                        <outlet property="searchTextField" destination="Rti-BM-3RQ" id="70e-aE-JDZ"/>
                         <outlet property="sentimentLabel" destination="B6T-0v-UOy" id="ocq-xj-sB1"/>
-                        <outlet property="textField" destination="3Xs-Ky-LMe" id="n6M-BW-kmZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
